@@ -19,7 +19,12 @@ app.use(cors({
     origin: '*'
 }));
 
-app.get('/', async (req, res)=>{
+app.get('/', function() {
+    res.send('work')
+})
+
+app.get('/generate/image', async (req, res)=>{
+    return
     const imgParams = JSON.parse(req.query.json);
     const canvasManager = new CanvasManager(
         imgParams.opts,
@@ -35,7 +40,7 @@ app.get('/', async (req, res)=>{
     // res.send(canvasManager.image())
 })
 
-app.post('/', async (req, res)=>{
+app.post('/image/generate', async (req, res)=>{
     const canvasManager = new CanvasManager(
         req.body.opts,
         req.body.fields,
