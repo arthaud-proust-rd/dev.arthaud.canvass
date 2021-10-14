@@ -1,0 +1,32 @@
+{
+  "name": "dev.arthaud.canva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "cd test && php -S localhost:8000",
+    "app": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthaud-proust/dev.arthaud.canva.git"
+  },
+  "keywords": [
+    "canva",
+    "canvas",
+    "img",
+    "api"
+  ],
+  "author": "Arthaud Proust",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthaud-proust/dev.arthaud.canva/issues"
+  },
+  "homepage": "https://github.com/arthaud-proust/dev.arthaud.canva#readme",
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
